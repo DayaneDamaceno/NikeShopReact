@@ -14,7 +14,6 @@ import { useProductStore } from "../../../../store/ProductStore";
 interface ProductsListProps {}
 
 const ProductsList: FunctionComponent<ProductsListProps> = () => {
-  // const [products, setProducts] = useState<IProduct[]>();
   const products = useProductStore((state) => state.products);
   const loadProducts = useProductStore((state) => state.loadProducts);
   const addNewItemInCart = useCartStore((state) => state.addNewItemInCart);
