@@ -1,0 +1,48 @@
+{
+  "user": [
+    {
+      "Id": 1,
+      "Name": "Dayane Damaceno"
+    }
+  ],
+  "product": [
+    {
+      "Id": 1,
+      "Name": "Camiseta Nike Sportswear Feminina",
+      "Category": "Casual",
+      "Price": 59.99
+    },
+    {
+      "Id": 2,
+      "Name": "Camiseta Nike Sportswear Feminina",
+      "Category": "Casual",
+      "Price": 199.99
+    },
+    {
+      "Id": 3,
+      "Name": "Camiseta Nike Dri-FIT Legend Feminina",
+      "Category": "Treino & Academia",
+      "Price": 149.99
+    },
+    {
+      "Id": 4,
+      "Name": "Regata Cropped Nike Dri-Fit Feminina",
+      "Category": "Yoga",
+      "Price": 249.99
+    }
+  ],
+  "cart": [
+    {
+      "Id": 1,
+      "ProductId": 2,
+      "UserId": 1,
+      "Amount": 2
+    },
+    {
+      "Id": 2,
+      "ProductId": 3,
+      "UserId": 1,
+      "Amount": 1
+    }
+  ]
+}
