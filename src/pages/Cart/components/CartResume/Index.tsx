@@ -1,7 +1,6 @@
 import { FunctionComponent, useEffect, useState } from "react";
 import { formatPrice } from "../../../../helpers/formatPrice";
-import { useCartStore } from "../../../../store/CartStore";
-
+import { useCartStore } from "../../../../services/store/CartStore";
 import {
   ButtonFinish,
   Content,

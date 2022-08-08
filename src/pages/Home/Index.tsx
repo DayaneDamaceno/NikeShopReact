@@ -1,6 +1,6 @@
 import { Title } from "./styles";
 import ProductsList from "./components/ProductsList/Index";
-import { useProductStore } from "../../store/ProductStore";
+import { useProductStore } from "../../services/store/ProductStore";
 
 function Home() {
   const productsLength = useProductStore((state) => state.products.length);

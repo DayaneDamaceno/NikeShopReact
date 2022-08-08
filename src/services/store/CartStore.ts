@@ -1,7 +1,7 @@
 import create from "zustand";
 import { devtools } from "zustand/middleware";
-import { IProduct } from "../models/IProduct";
-import { IProductCart } from "../models/IProductCart";
+import { IProduct } from "../../models/IProduct";
+import { IProductCart } from "../../models/IProductCart";
 
 interface ICartState {
   cart: IProductCart[];
@@ -16,9 +16,9 @@ export const useCartStore = create<ICartState>()(
 
     addNewItemInCart: (product: IProduct) =>
       set((state) => {
-        const itemExiste = state.cart.find((item) => item.Id == product.Id);
-        if (itemExiste) {
-          state.updateAmount(product.Id, itemExiste.Amount + 1);
+        const itemExist = state.cart.find((item) => item.Id == product.Id);
+        if (itemExist) {
+          state.updateAmount(product.Id, itemExist.Amount + 1);
           return { state };
         }
         const newItem: IProductCart = {

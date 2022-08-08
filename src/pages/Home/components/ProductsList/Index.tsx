@@ -1,15 +1,13 @@
-import { FunctionComponent, useEffect, useState } from "react";
-import { getAllProducts } from "../../../../services/ProductService";
-import { useCartStore } from "../../../../store/CartStore";
-import { IProduct } from "../../../../models/IProduct";
+import { FunctionComponent, useEffect } from "react";
 import { formatPrice } from "../../../../helpers/formatPrice";
+import { useProductStore } from "../../../../services/store/ProductStore";
+import { useCartStore } from "../../../../services/store/CartStore";
 import {
   ButtonAddCart,
   Detail,
   ListProductsContainer,
   ProductItemContainer,
 } from "./styles";
-import { useProductStore } from "../../../../store/ProductStore";
 
 interface ProductsListProps {}
 

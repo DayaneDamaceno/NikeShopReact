@@ -1,7 +1,7 @@
 import create from "zustand";
 import { devtools } from "zustand/middleware";
-import { IProduct } from "../models/IProduct";
-import { getAllProducts } from "../services/ProductService";
+import { IProduct } from "../../models/IProduct";
+import { getAllProducts } from "../ProductService";
 
 interface IProductState {
   products: IProduct[];

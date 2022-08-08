@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { formatPrice } from "../../../../helpers/formatPrice";
 import { IProductCart } from "../../../../models/IProductCart";
-import { useCartStore } from "../../../../store/CartStore";
+import { useCartStore } from "../../../../services/store/CartStore";
 import { FiX } from "react-icons/fi";
 import {
   AmountContainer,

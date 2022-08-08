@@ -2,8 +2,8 @@ import { FunctionComponent } from "react";
 import { Cart, HeaderContainer, Logo } from "./styles";
 import logoImg from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
-import { useCartStore } from "../../store/CartStore";
 import { FiShoppingCart } from "react-icons/fi";
+import { useCartStore } from "../../services/store/CartStore";
 
 interface HeaderProps {}
 
